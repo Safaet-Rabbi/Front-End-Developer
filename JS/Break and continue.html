@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and continue</title>
+</head>
+<body>
+
+    <script>
+        for(var i=1; i<=100; i++){
+
+            if(i==10){
+
+                break;
+            }
+            document.write(" " +i);
+
+        }
+        document.write("end")
+
+
+
+        for(var i=1; i<=100; i++){
+
+        if(i %2 !==0){
+
+            continue;
+        }
+        document.write(" " +i);
+
+        }
+            </script>
+    <!-- if doc.write er pr thakle i==value prjnto cholbe but if doc.write er age thakle
+         i==value er ager number prjnto cholbe,abr "i%even!==0" thakle even number output dekhabe
+        jdi "i%even==0" thake tahle odd output dekhabe -->
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and use object</title>
+</head>
+<body>
+    <script>
+        
+
+        // console.log(age);
+
+        // how to create an object
+        // how to print the value of an object
+        // adding a constructor
+        // adding function inside a construct
+
+        function Student(name, age, cgpa, lang){
+            this.name= name;
+            this.age= age;
+            this.cgpa= cgpa;
+            this.lang= lang;
+            this.display = function() {
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.cgpa);
+                console.log(this.lang);
+
+            }
+
+          var  student1 = new Student("Anisul Islam",27,3.92,["Bengali","English","Deustch"]);
+          var  student2 = new Student("Safaet Rabbi",20,3.88,["Bengali","Spanish","Deustch"]);
+          var  student3 = new Student("Aron",32,2.98,["Bengali","English","Mandarin"]);
+
+        }
+
+
+
+        student1.display();
+        student2.display();
+       
+       
+ 
+
+        
+
+
+    </script>
+    
+</body>
+</html>

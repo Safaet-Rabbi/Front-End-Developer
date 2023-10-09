@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFE and function expression</title>
+</head>
+<body>
+
+    <script>
+        // Immediately call
+        
+      (  function display(){
+            console.log("Hello");
+        }) ();
+
+
+        // sum of 2 numbers
+
+         (function addition(x,y){
+            var result = x+y; 
+            
+            console.log(" sum = " +result);
+        }
+)  (14,20);
+
+            // square value
+        (    function square(x){
+                var result = x*x;
+                console.log("value = "+result);
+            } )  (8);
+ 
+
+
+    // function expression
+  var display2 = function displaymessage (msg){
+    console.log(msg);
+   }
+   display2 ("I am message");
+      
+       
+    </script>
+    
+</body>
+</html>

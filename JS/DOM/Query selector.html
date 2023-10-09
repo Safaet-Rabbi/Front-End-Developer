@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query selector</title>
+</head>
+<body>
+   <ol class="students-list">
+    <li class="student-a">student A</li>
+    <li class="student-a">student B</li>
+    <li class="student-a">student C</li>
+   </ol>
+    <script>
+        //Downwards-childrens
+    //    const studentList= document.querySelector(".students-list");
+    //    const StudentA= studentList.children[0];
+       //Upwards-parentElement
+       const studentA = document.querySelector("li");
+       const studentList = studentA.parentElement;
+
+
+    </script>
+    
+</body>
+</html>

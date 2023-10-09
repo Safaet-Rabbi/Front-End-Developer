@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Object</title>
+</head>
+<body>
+    <label for="name">Name : <input type="text" name="name" class="name-input" id="name-input"></label>
+    <script>
+        console.clear();
+        var input =document.querySelector("input[name=name]");
+        input.addEventListener('change' , changehandler)
+
+        function changehandler (e){
+            // console.log(e);
+            // console.log(e.type);
+            // console.log(e.target);
+            // console.log(e.target.className);
+            // console.log(e.target.id);
+            console.log(e.target.value);
+
+
+        }
+        
+    </script>
+    
+</body>
+</html>
