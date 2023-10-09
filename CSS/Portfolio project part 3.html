@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio project part 3</title>
+    <style>
+        h2{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .about-me{
+            background-color: dodgerblue;
+            padding: 1% 7%;
+            color: white;
+            text-align: center;
+            font-family: 'montserrat', sans-serif;
+        }
+        .about-me::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+        .dotted-hr{
+            border: 6px dotted white;
+            border-bottom: none;
+            margin: 20px auto;
+            width: 70px;
+        }
+        .aboutme-image img{
+            border: 5px solid white;
+            border-radius: 50%;
+            height: 220px;
+            width: 200px;
+
+        }
+        .about-me p{
+            text-align: center;
+        }
+        .about-me a{
+            font-size: 1.2rem;
+        }
+        .cv-button{
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="about-me" id="about-me-id">
+        <h2>ABOUT ME</h2>
+        <hr class="dotted-hr">
+        <div class="aboutme-image col-6">
+            <img src="" alt="">
+        </div>
+        <div class="aboutme-desc col-6">
+            <p></p>
+            <p></p>
+            
+            <hr class="aboutme-hr">
+            <p>Name:Safayat Rabbi</p>
+            <hr class="aboutme-hr">
+            <p>Address:Rajshahi,Bangladesh</p>
+            <hr class="aboutme-hr">
+            <p>E-mail: <a href="mailto:safayat011048@gmail.com"></a></p>
+            <hr class="aboutme-hr">
+            <p>Phone: <a href="tel:+8801776614094"> +8801776614094</a></p>
+            <hr class="aboutme-hr">
+            <p>Website: <a href="#" target="blank">www.studywithanis.com</a></p>
+            <hr class="aboutme-hr">
+
+            <p><a href="#" target="blank" download=""><button class="cv-button">Download CV</button></a></p>
+
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

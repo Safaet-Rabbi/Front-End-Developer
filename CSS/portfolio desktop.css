@@ -1,0 +1,20 @@
+.profile .top-weather-icon{
+    position: absolute;
+    right: 100px;
+    width: 120px;
+    transition: width 2s, transform 2s;
+
+}
+.profile .top-weather-icon:hover{
+   width: 140px;
+}
+.profile .bottom-weather-icon{
+  
+    left: 140px;
+    width: 120px;
+    transition: width 2s, transform 2s;
+
+}
+.profile .bottom-weather-icon:hover{
+   width: 140px;
+}

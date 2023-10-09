@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation property</title>
+    <style>
+        .coffee{
+            max-width: 200px;
+            height: auto;
+            border: 2px solid black;
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 5px;
+           
+         
+        }
+        .coffee:hover{
+            animation-name: img-anim;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes img-anim{
+            0%{
+                max-width: 200px;
+                border-color: red;
+
+            }
+            50%{
+                max-width: 300px;
+                border-color: darkcyan;
+
+            }
+            100%{
+                max-width: 400px;
+                border-color: yellow;
+            }
+        }
+        .ezio{
+            max-width: 200px;
+            height: auto;
+            border: 2px solid black;
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 5px;
+            position: relative;
+            animation-name: img-anim;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+         
+        }
+        .ezio:hover{
+            animation-name: img-anim;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+           
+
+        }
+        @keyframes img-anim{
+            0%{
+              top: 0;
+              left: 0;
+
+            }
+            50%{
+               top: 100px;
+               left: 0;
+               opacity: 0.5;
+               
+
+            }
+            100%{
+                top: 0;
+                left: 0;
+               
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img class="coffee" src="/images/Nathan coffee.jpg" alt="">
+    <img class="ezio" src="/images/Ezio with Leo.bmp" alt="">
+    
+</body>
+</html>

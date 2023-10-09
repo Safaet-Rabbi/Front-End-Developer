@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        :root{
+            --primary-color: red;
+            --secondary-color:green;
+        }
+        div{
+            height: 250px;
+            width: 250px;
+
+        }
+        #div1{
+            background-color: var(--primary-color);
+            position: absolute;
+            z-index: 1;
+
+        }
+        #div2{
+            background-color: var(--secondary-coor,coral);
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: -2;
+
+        }
+        .div3{
+            position: relative;
+            top: 500px;
+        }
+        @media screen and (max-width: 800px) {
+            :root{
+            --primary-color: black;
+            --secondary-color:green;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+    <div id="div2">
+        
+    </div>
+    <div class="div3">
+        <p>z-index depends on it's value,the more i give value number,the more it will come to the up </p>
+    </div>
+    
+</body>
+</html>

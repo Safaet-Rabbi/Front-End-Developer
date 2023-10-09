@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio project part 1</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'fira Sans', sans-serif;            
+         }
+        body{
+            margin: 0;
+        }
+        h1{
+            font-size: 2.5rem;
+            text-align: center;
+
+        }
+        a{
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .navbar{
+            background-color: cadetblue;
+            padding: 1% 7%;
+            text-align: center;
+        }
+        .navbar h1{
+            color: white;
+            margin: 0;
+            padding-top: 10px;
+        }
+        .navbar-menu{
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+        }
+        .navbar-menu a{
+            background-color: cadetblue;
+            border-radius: 10px;
+            margin: 7px 0;
+            padding: 10px;
+        }
+        .nav-logo{
+            text-align: left;
+        }
+        /* for desktop */
+        .col-2 {width: 16.66%;}
+        .col-4 {width: 33.33%;}
+        .col-6 {width: 100%;}
+        .nav-heading h1{
+            text-align: right;
+        }
+        .navbar-menu{
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .navbar-menu a{
+            padding: 5px 10px;
+            margin: 20px 0;
+        }
+        .navbar-menu a:hover{
+            background-color: darkcyan;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+        }
+        /* for mobile */
+        [class*="col-"]{
+            width: 100%;
+        }
+        .navbar::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-logo col-2">
+            <img src="https://www.studywithanis.com/wp-content/uploads/2017/01/logo.png" alt="logo">
+
+        </div>
+        <div class="nav-heading col-4">
+            <h1>Safayat Rabbi</h1>
+
+        </div>
+        <div class="navbar-menu col-6">
+            <a href="#">Home</a>
+            <a href="#about-me-id">About Me</a>
+            <a href="#">Contact Me</a>
+            <a href="#">Skill</a>
+
+        </div>
+    </div>
+
+
+        <!--portfolio part 3 starts here-->
+
+
+    <div class="about-me" id="about-me-id">
+        <h2>ABOUT ME</h2>
+        <hr class="dotted-hr">
+        <div class="aboutme-image col-6">
+            <img src="" alt="">
+        </div>
+        <div class="aboutme-desc col-6">
+            <p></p>
+            <p></p>
+            
+            <hr class="aboutme-hr">
+            <p>Name:Safayat Rabbi</p>
+            <hr class="aboutme-hr">
+            <p>Address:Rajshahi,Bangladesh</p>
+            <hr class="aboutme-hr">
+            <p>E-mail: <a href="mailto:safayat011048@gmail.com"></a></p>
+            <hr class="aboutme-hr">
+            <p>Phone: <a href="tel:+8801776614094"> +8801776614094</a></p>
+            <hr class="aboutme-hr">
+            <p>Website: <a href="#" target="blank">www.studywithanis.com</a></p>
+            <hr class="aboutme-hr">
+
+            <p><a href="#" target="blank" download=""><button class="cv-button">Download CV</button></a></p>
+
+
+        </div>
+
+    </div>
+
+    <!--portfolio part 3 ends here-->
+    
+</body>
+</html>

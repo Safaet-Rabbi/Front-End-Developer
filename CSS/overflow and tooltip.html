@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow and tooltip</title>
+    <style>
+        .div1{
+            height: 100px;
+            width: 250px;
+            background-color: green;
+            border: 1px solid red;
+            overflow: visible;
+        }
+        .div2{
+            height: 100px;
+            width: 250px;
+            background-color: green;
+            border: 1px solid red;
+            overflow: hidden;
+            float: left;
+        }
+        .div3{
+            height: 100px;
+            width: 250px;
+            background-color: green;
+            border: 1px solid red;
+            overflow: scroll;
+            float: right;
+        }
+        .tooltip .tooltip-text{
+            visibility: hidden;
+            width: 150px;
+            background-color: indigo;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+
+        }
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#" class="tooltip">
+        Facebook <span class="tooltip-text">Facebook is a social media</span>
+    </a> <br><br><br><br>
+    <div class="div1">
+        <p>1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, consequatur corrupti quos modi iste neque. Perspiciatis similique odio quam eos saepe delectus. Officiis hic quia nisi expedita aliquid, ea iure adipisci facilis facere, sunt recusandae ducimus velit eaque? Sed commodi ab harum et natus? Dolores error exercitationem quo corporis accusamus!</p>
+    </div>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit tempore sit quae, voluptates voluptas ullam laboriosam? Numquam voluptatem mollitia, optio consequuntur ullam porro laborum, ab, laboriosam esse assumenda quo ipsa cupiditate eum officiis debitis aspernatur autem repellat veritatis laudantium! Aut, consequatur in ut officia reprehenderit sit fugiat quis? Repellendus.</p>
+    </div>
+    <div class="div3">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi praesentium at officia dolores officiis nobis quod expedita, dolore quas nam sunt enim quia, consequuntur accusantium illum facilis numquam provident obcaecati facere voluptas illo quae. Laboriosam porro quasi modi et recusandae, deleniti voluptas sapiente perferendis ipsum, eos, magnam natus fuga.
+        </p>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class and element</title>
+    <style>
+        a.my-link:hover{
+            color: green;
+        }
+        input{
+            padding: 10px;
+            font-size: 1rem;
+            width: 150px;
+        }
+        input:focus{
+            background-color: goldenrod;
+        }
+        table,tr,td{
+            border: 1px solid grey;
+        }
+        tr:nth-child(odd){
+            background-color: skyblue;
+        }
+        .kim:hover{
+            color: blue;
+        }
+        .kim::first-letter{
+            color: red;
+            font-size: 3.5rem;
+        }
+        .park:hover{
+            color: rgb(36, 150, 21);
+        }
+        .park::first-line{
+            color: blue;
+            font-size: 3.5rem;
+        
+        }
+        .park::after{
+            content: ">";
+        }
+        .park::before{
+            content: "<";
+        }
+      
+        .demo p:nth-child(even){
+            background: #000;
+            color: white;
+
+          }
+          li:last-of-type{
+              background: #000;
+              color: aqua;
+          }
+          .lee::first-letter{
+              color: brown;
+              font-size: 3rem;
+          }
+          .cha::first-line{
+              color: crimson;
+              font-size: 3rem;
+          }
+          ::selection{
+              color: grey;
+              background: #000;
+          }
+          .freddy::before, .freddy::after{
+              content: "";
+              width: 100%;
+              height: 20px;
+              background: #000;
+              display: inline-block;
+
+          }
+          .thorne{
+              color: blue;
+              font-size: 3.5rem;
+          }
+          input::placeholder{
+              color: darkgreen;
+          }
+
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter Your Name" name="" id=""> <br>
+    <br> 
+<a class="my-link" href="#">Tutorial</a>
+<a href="#">Home</a>
+
+
+
+<br>
+
+<br>
+<br>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr>
+        <td>Safayat</td>
+        <td>19</td>
+    </tr>
+    <tr>
+        <td>Dominic</td>
+        <td>32</td>
+    </tr>
+
+</table>
+<br>
+<br>
+<br>
+<input type="text" placeholder="Hello everyone" name="" id="">
+
+<p class="kim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui cumque recusandae sunt, reiciendis, eveniet temporibus cupiditate culpa dolorem animi magnam minima unde voluptatibus voluptatem blanditiis sit cum. Debitis, harum.</p>
+<br>
+<br>
+<p class="park">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias consectetur, doloremque, dolor nulla autem saepe voluptatum perspiciatis optio nisi placeat consequatur. Illo nulla dolorum deleniti sunt velit non? Quo, labore!</p>
+
+<div class="demo">
+    <p class="lee">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nisi aspernatur, eligendi minima quidem earum ratione. Cupiditate deserunt repudiandae facilis ab, modi laboriosam aliquid enim minima magnam saepe qui non!</p>
+    <p class="lee">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, illo? Veniam mollitia iste optio labore, eos consectetur quae tempore delectus atque! Animi similique quisquam nostrum est saepe ullam a voluptas.</p>
+    <p class="lee">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quo quaerat atque corporis dolorum laudantium expedita quam commodi possimus unde culpa molestiae aperiam ratione, repudiandae doloribus eius perferendis odit maxime.</p>
+    <p class="lee">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum pariatur ullam, iusto ad dicta voluptas a alias labore officia exercitationem aliquam ipsum doloremque tenetur aperiam veniam veritatis voluptate obcaecati repellendus.</p>
+    <p class="cha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias debitis quam assumenda et. Cum adipisci veritatis doloribus, nemo aliquam dicta. In iste earum quia delectus voluptatum eaque hic pariatur molestias architecto aliquam voluptatem aut officia et recusandae, eveniet nesciunt reiciendis, quae soluta suscipit optio commodi, modi maiores. Exercitationem officiis nostrum fugiat nemo vitae eius repellendus repellat cumque expedita velit, quos incidunt quis culpa nam sed itaque maxime debitis earum veritatis non. Earum cum magnam aspernatur veniam ipsum dicta, repellat molestias ipsam officia quis voluptates pariatur eum alias itaque distinctio nihil beatae consequatur natus, quia architecto ex quidem ullam minima! Autem.</p>
+
+
+</div>
+
+<div class="freddy">
+    <p> <span class="thorne">Lorem</span>  ipsum dolor sit amet, consectetur adipisicing elit. Accusamus molestias dignissimos a, suscipit excepturi officia quia, consequuntur sit nemo tempora in quod beatae sapiente repudiandae non fuga earum dolorum sint!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quaerat dolorum debitis nemo facilis aliquid eum voluptas sequi quisquam quae, sit, iusto, maxime culpa blanditiis dolorem? Nostrum reprehenderit adipisci atque.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam non repellendus officiis incidunt debitis pariatur nisi atque mollitia. Molestiae inventore vero iusto, doloremque laboriosam nulla repellat dolorem veniam voluptas architecto!</p>
+</div>
+
+<ul>
+    <li>Thomas</li>
+    <li>Arthur</li>
+    <li>John</li>
+    <li>Finn</li>
+    <li>Michael</li>
+</ul>
+</body>
+</html>

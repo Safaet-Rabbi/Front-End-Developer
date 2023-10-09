@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio project part 2</title>
+    <link rel="stylesheet" href="/CSS/portfolio desktop.css">
+    <style>
+        .profile{
+            padding: 130px 10px;
+            position: relative;
+            text-align: center;
+        }
+        .profile .top-weather-icon{
+            position: absolute;
+            right: 60px;
+            top: 20px;
+            transition: transform 2s;
+
+        }
+        .profile .top-weather-icon:hover{
+            transform: rotate(360deg);
+        }
+        .profile-desc h1{
+            font-family: 'Satisfy', cursive;
+            font-size: 3rem;
+        }
+        .profile-desc p{
+            color: gray;
+            margin: 0 auto;
+            text-align: center;
+            width: 50%;
+        } 
+        .profile .bottom-weather-icon{
+            position: absolute;
+            left: 60px;
+            bottom: 10px;
+            transition: transform 2s;
+
+        }
+        .profile .bottom-weather-icon:hover{
+            transform: rotate(360deg);
+        }
+        .profile::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img class="top-weather-icon" src="" alt="top weather">
+        <div class="profile-desc">
+            <h1>I am a hardcore PC gamer</h1>
+            <p>Hello!My name is Safayat Rabbi.Welcome to my personal profile</p>
+        </div>
+        <img class="bottom-weather-icon" src="" alt="bottom weather">
+        
+    </div>
+    
+</body>
+</html>
