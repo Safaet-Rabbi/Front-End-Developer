@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <h2>Registration form</h2>
+
+    <form action="">
+
+ <div>
+
+    <label for="fullname"> Full Name: </label>
+    <input type="text" name="fullname" id="fullname" required>
+    
+ </div> <br>
+ <div>
+    <label for="email"> Email: </label>
+    <input type="email" name="email" id="email">
+ 
+ </div> <br>
+ <div>
+    <label for="password"> password: </label>
+    <input type="password" name="password" id="password">
+ 
+ </div> <br>
+ <div>
+    <label for="dob"> Date of birth: </label>
+    <input type="date" name="dob" id="dob">
+ 
+ </div> <br>
+ <div>
+    <label for="photo"> Choose your photo: </label>
+    <input type="file" name="photo" id="photo">
+ 
+ </div> <br>
+ <div>
+    <label for="gender"> Gender: </label>
+    <input type="radio" name="gender" id="gender"> Male
+    <input type="radio" name="gender" id="gender"> Female
+    <input type="radio" name="gender" id="gender" disabled> Other
+ 
+ </div> <br>
+ <div>
+    <label for="Religion"> Religion: </label>
+    <input type="checkbox" name="c1" id="Muslim"> Muslim
+    <input type="checkbox" name="c1" id="Buddhist"> Buddhist
+ 
+ </div> <br>
+ <div>
+ <label for="department">Department:</label>
+ <select name="department" id="">
+     <option value="cse">CSE</option>
+     <option value="eee" selected>EEE</option>
+     <option value="llb">LLB</option>
+ </select>
+ </div> <br>
+ <div> 
+     <label for="message">Message:</label> <br>
+     <textarea name="" id="" cols="30" rows="10"></textarea>
+
+ </div> <br>
+ <div>
+     <input type="submit" value="Register">
+     <input type="reset" value="Clear">
+ </div>
+    </form>
+</body>
+</html>
