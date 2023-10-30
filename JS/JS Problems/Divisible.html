@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ['5','7','3','2','9'];
+
+      function div(number)
+      {
+        for(let i=1;i<=number;i++)
+        {
+            if(i%15==0)
+           
+            {
+              console.log(`${i} is div15`);
+            }
+            else if(i%3==0)
+            {
+                console.log(`${i} is div3`);
+            }
+            else if(i%5==0)
+            {
+                console.log(`${i} is div5`);
+            }
+            else 
+            {
+                console.log(i);
+            }
+        }
+      }
+      div(100);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function largeststr(names)
+        {
+            let longestword = ' ';
+            for(name of names)
+            {
+                if(name.length> longestword.length)
+                {
+                    longestword=name;
+                }
+            }
+            return [longestword, names.indexOf(longestword)];
+
+        }
+        console.log(largeststr(['Safaet','Euni','Arno','Mike','Samantha']));
+    </script>
+    
+</body>
+</html>
