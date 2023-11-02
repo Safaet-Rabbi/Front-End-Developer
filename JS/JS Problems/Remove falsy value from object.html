@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            a:"lws",
+            b:undefined,
+            c:false,
+            d:"Safaet",
+            e:true,
+            f:NaN,
+            g:"apple",
+            h:"",
+            i:40,
+            j:"k"};
+
+            const trueObject = function(obj)
+            {
+                for(let i in obj)
+                {
+                    if(!obj[i])
+                    {
+                        delete obj[i];
+                    }
+
+                }
+                return obj;
+            }
+            console.log(trueObject(obj));
+
+    </script>
+    
+</body>
+</html>
