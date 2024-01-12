@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    margin-top: 15px;
+    ul{
+        list-style-type: none;
+        li{
+            display: inline-block;
+            margin: 0 15 px;
+            a{
+                display: inline-block;
+                color: navy;
+                text-decoration: none;
+                padding: 10px;
+                transition: 0.4s;
+                border-radius: 5px;
+            }
+            a:hover{
+                background: #000;
+                color: red;
+            }
+        }
+    }
+    
+}
+
+$header-bgcolor: rgb(67, 72, 97);
+$main-bgcolor: gray;
+$footer-bgcolor:silver;
+$para-fontsize: 15px;
+
+header{
+    background: $header-bgcolor;
+}
+main{
+    background: $main-bgcolor;
+}
+footer{
+    background: $footer-bgcolor;
+}
+about p{
+    font-size: $para-fontsize;
+}
