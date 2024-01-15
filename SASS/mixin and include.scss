@@ -1,0 +1,25 @@
+//example 1
+// creating  a simple @mixin
+@mixin para-style {
+    font-size: 10px;
+    text-align: justify;
+  }
+  
+  // including or using the @mixin
+  #about-me p {
+    @include para-style;
+    margin: 1rem;
+  }
+  
+  //example 2
+  // creating  a dynamic @mixin
+  @mixin para-style($size, $style) {
+    font-size: $size;
+    text-align: $style;
+  }
+  
+  // including or using the @mixin
+  #about-me p {
+    @include para-style(24px, justify);
+    margin: 1rem;
+  }
