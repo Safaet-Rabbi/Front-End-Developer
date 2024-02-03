@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person {
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+            play(status){
+                console.log(`${this.name} is playing ${status}`);
+            }
+        }
+        const person1 = new person("Shakib",35);
+        const person2 = new person("Tamim",36);
+
+        person1.play("well");
+        person2.play("bad");
+    </script>
+    
+</body>
+</html>
